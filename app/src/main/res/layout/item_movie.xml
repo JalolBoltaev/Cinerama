@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+>
+
+    <android.support.design.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_margin="6dp"
+            app:cardCornerRadius="4dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+    >
+
+        <ImageView
+                android:id="@+id/imageViewPoster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+        />
+
+        <RelativeLayout
+android:id="@+id/rvHd"
+                android:layout_width="32dp" android:layout_height="34dp"
+                android:layout_gravity="right|top"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/bc_hd"
+        >
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:fontFamily="@font/productsans_medium"
+                      android:text="HD"
+                      android:textSize="13sp"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/white"
+            />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout android:layout_width="56dp" android:layout_height="24dp"
+        android:background="@drawable/bc_year"
+                        android:layout_gravity="bottom"
+        >
+
+            <TextView
+                    android:id="@+id/textViewYear"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:fontFamily="@font/productsans_medium"
+                      android:text="2019"
+                      android:textSize="13sp"
+                      android:layout_centerInParent="true"
+                      android:textColor="@color/white"
+            />
+
+        </RelativeLayout>
+
+    </android.support.design.card.MaterialCardView>
+
+    <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_margin="6dp"
+            android:background="@color/grayLight"
+            android:fontFamily="@font/productsans_black"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:ellipsize="end"
+    />
+
+    <TextView
+            android:id="@+id/textViewGenre"
+            android:layout_width="wrap_content"
+            android:minWidth="120dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:alpha="0.6"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/grayLight"
+            android:fontFamily="@font/productsans_light"
+    />
+
+
+</LinearLayout>
